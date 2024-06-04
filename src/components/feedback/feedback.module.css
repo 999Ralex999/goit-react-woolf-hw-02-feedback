@@ -1,0 +1,37 @@
+:root {
+  --primary-color: #a5a3f3;
+  --hover-color: #7d7bf3;
+  --active-color: #5b59f3;
+  --border-color: #7d7bf3;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  flex-direction: row;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  font-size: 16px;
+  color: #ffffff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: var(--hover-color);
+  transform: translateY(-2px);
+}
+
+.button:active {
+  background-color: var(--active-color);
+  transform: translateY(0);
+}
